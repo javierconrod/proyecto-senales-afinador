@@ -1,0 +1,38 @@
+﻿<Window x:Class="AfinadorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AfinadorWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="40,311,0,0" VerticalAlignment="Top" Width="126" Height="34" Foreground="White" Background="#FF0B0B87" FontSize="18" Click="BtnIniciar_Click"/>
+        <Button x:Name="btnDetener" Content="Detener" HorizontalAlignment="Left" Margin="40,354,0,0" VerticalAlignment="Top" Width="126" Height="34" Foreground="White" Background="#FF0B0B87" FontSize="18" RenderTransformOrigin="0.5,0.5" Click="BtnDetener_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.516"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock x:Name="lblFrecuencia" HorizontalAlignment="Left" Margin="373,129,0,0" TextWrapping="Wrap" Text="-Hz" VerticalAlignment="Top" FontSize="24" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,22,0,0" TextWrapping="Wrap" Text="Afinador de Guitarra" VerticalAlignment="Top" Foreground="#FF001883" FontSize="48" FontFamily="Segoe UI Black"/>
+        <TextBlock x:Name="lblTono" HorizontalAlignment="Left" Margin="373,161,0,0" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" FontSize="72" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <Image x:Name="imgFlechaIzquierda" Margin="307,193,465,183" Source="flecha.png" Stretch="Fill" Visibility="Visible"/>
+        <Image x:Name="imgFlechaDerecha" Margin="460,193,312,183" Source="flecha.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="lblCuerda" HorizontalAlignment="Left" Margin="362,277,0,0" TextWrapping="Wrap" Text="Cuerda: " VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
