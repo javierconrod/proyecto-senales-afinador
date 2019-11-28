@@ -86,25 +86,39 @@ namespace AfinadorWPF
             float frecuenciaFundamental = (float)(indiceValorMaximo * formato.SampleRate) / (float)valoresAbsolutos.Length;
 
             lblFrecuencia.Text = frecuenciaFundamental.ToString("n") + " Hz";
+
+
+
+
+
             /* Aqui se modificann los valores para que hagan lo de apretar o aflojar la cuerda */
-            if(frecuenciaFundamental <= 161 && frecuenciaFundamental <= 164)
+            //Inicio de la cuerda 6
+
+            if (frecuenciaFundamental <= 150 && frecuenciaFundamental <= 159)   //esta floja
             {
+                lblTono.Text = "D#";
                 imgFlechaDerecha.Visibility = Visibility.Visible;
                 imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Foreground = Brushes.Gray;
             }
-            else if(frecuenciaFundamental > 164 && frecuenciaFundamental <= 200 )
+            else if(frecuenciaFundamental > 169 && frecuenciaFundamental <= 178 ) //esta tensa
             {
+                lblTono.Text = "F";
                 imgFlechaDerecha.Visibility = Visibility.Hidden;
                 imgFlechaIzquierda.Visibility = Visibility.Visible;
-                
+                lblTono.Foreground = Brushes.Gray;
+
             }
-            if (frecuenciaFundamental >= 161 && frecuenciaFundamental <= 167)
+            else if (frecuenciaFundamental >= 161 && frecuenciaFundamental <= 167) //esta al toque prro
             {
-                imgFlechaDerecha.Visibility = Visibility.Visible;
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
                 lblTono.Text = "E3";
+                lblTono.Foreground = Brushes.Green;
                 lblCuerda.Text = "Cuerda 6";
             }
-
+            
+            //Fin de la cuerda 6
 
             else if (frecuenciaFundamental >= 217 && frecuenciaFundamental <= 223)
             {
@@ -135,6 +149,13 @@ namespace AfinadorWPF
                 lblTono.Text = "E5";
                 lblCuerda.Text = "Cuerda 1";
             }
+            
+            
+            
+            
+            
+            
+            
             /* Aquí termina el codigo de mostrar la nota */
 
         }
