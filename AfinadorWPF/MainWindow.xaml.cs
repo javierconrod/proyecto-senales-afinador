@@ -94,68 +94,165 @@ namespace AfinadorWPF
             /* Aqui se modificann los valores para que hagan lo de apretar o aflojar la cuerda */
             //Inicio de la cuerda 6
 
-            if (frecuenciaFundamental <= 150 && frecuenciaFundamental <= 159)   //esta floja
+            if (frecuenciaFundamental >= 149 && frecuenciaFundamental <= 159)   //esta floja
             {
-                lblTono.Text = "D#";
+                lblTono.Text = "Eb";
                 imgFlechaDerecha.Visibility = Visibility.Visible;
                 imgFlechaIzquierda.Visibility = Visibility.Hidden;
                 lblTono.Foreground = Brushes.Gray;
             }
-            else if(frecuenciaFundamental > 169 && frecuenciaFundamental <= 178 ) //esta tensa
+            else if (frecuenciaFundamental >= 169 && frecuenciaFundamental <= 179) //esta tensa
             {
-                lblTono.Text = "F";
+                lblTono.Text = "E#";
                 imgFlechaDerecha.Visibility = Visibility.Hidden;
                 imgFlechaIzquierda.Visibility = Visibility.Visible;
                 lblTono.Foreground = Brushes.Gray;
 
             }
-            else if (frecuenciaFundamental >= 161 && frecuenciaFundamental <= 167) //esta al toque prro
+            else if (frecuenciaFundamental >= 160 && frecuenciaFundamental <= 168) //esta al toque prro
             {
                 imgFlechaDerecha.Visibility = Visibility.Hidden;
                 imgFlechaIzquierda.Visibility = Visibility.Hidden;
-                lblTono.Text = "E3";
+                lblTono.Text = "E";
                 lblTono.Foreground = Brushes.Green;
                 lblCuerda.Text = "Cuerda 6";
             }
-            
-            //Fin de la cuerda 6
 
-            else if (frecuenciaFundamental >= 217 && frecuenciaFundamental <= 223)
+            //Fin de la cuerda 6
+            //comienzo de la cuerda 5
+
+            else if (frecuenciaFundamental >= 204 && frecuenciaFundamental <= 214)   //esta floja
             {
-                lblTono.Text = "A3";
+                lblTono.Text = "Ab";
+                imgFlechaDerecha.Visibility = Visibility.Visible;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Foreground = Brushes.Gray;
+            }
+            else if (frecuenciaFundamental >= 226 && frecuenciaFundamental <= 236) //esta tensa
+            {
+                lblTono.Text = "A#";
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Visible;
+                lblTono.Foreground = Brushes.Gray;
+
+            }
+            else if (frecuenciaFundamental >= 215 && frecuenciaFundamental <= 225) //esta al toque prro
+            {
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Text = "A";
+                lblTono.Foreground = Brushes.Green;
                 lblCuerda.Text = "Cuerda 5";
             }
 
-            else if (frecuenciaFundamental >= 290 && frecuenciaFundamental <= 297)
+            //fin de la cuerda 5
+            //inicia la 4
+
+            else if (frecuenciaFundamental >= 276 && frecuenciaFundamental <= 286)   //esta floja
             {
-                lblTono.Text = "D4";
+                lblTono.Text = "Db";
+                imgFlechaDerecha.Visibility = Visibility.Visible;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Foreground = Brushes.Gray;
+            }
+            else if (frecuenciaFundamental >= 298 && frecuenciaFundamental <= 308) //esta tensa
+            {
+                lblTono.Text = "D#";
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Visible;
+                lblTono.Foreground = Brushes.Gray;
+
+            }
+            else if (frecuenciaFundamental >= 287 && frecuenciaFundamental <= 297) //esta al toque prro
+            {
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Text = "D";
+                lblTono.Foreground = Brushes.Green;
                 lblCuerda.Text = "Cuerda 4";
             }
 
-            else if (frecuenciaFundamental >= 389 && frecuenciaFundamental <= 395)
+            //termina la 4
+            //inicia la 3
+
+            else if (frecuenciaFundamental >= 180 && frecuenciaFundamental <= 190)   //esta floja
             {
-                lblTono.Text = "G4";
+                lblTono.Text = "Gb";
+                imgFlechaDerecha.Visibility = Visibility.Visible;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Foreground = Brushes.Gray;
+            }
+            else if (frecuenciaFundamental >= 198 && frecuenciaFundamental <= 203) //esta tensa
+            {
+                lblTono.Text = "G#";
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Visible;
+                lblTono.Foreground = Brushes.Gray;
+
+            }
+            else if (frecuenciaFundamental >= 191 && frecuenciaFundamental <= 197) //esta al toque prro
+            {
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Text = "G";
+                lblTono.Foreground = Brushes.Green;
                 lblCuerda.Text = "Cuerda 3";
             }
 
-            else if (frecuenciaFundamental >= 490 && frecuenciaFundamental <= 498)
+            //termina la 3
+            //inicia la 2
+
+            else if (frecuenciaFundamental >= 237 && frecuenciaFundamental <= 242)   //esta floja
             {
-                lblTono.Text = "B4";
+                lblTono.Text = "Bb";
+                imgFlechaDerecha.Visibility = Visibility.Visible;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Foreground = Brushes.Gray;
+            }
+            else if (frecuenciaFundamental >= 250 && frecuenciaFundamental <= 260) //esta tensa
+            {
+                lblTono.Text = "B#";
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Visible;
+                lblTono.Foreground = Brushes.Gray;
+
+            }
+            else if (frecuenciaFundamental >= 243 && frecuenciaFundamental <= 249) //esta al toque prro
+            {
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Text = "B";
+                lblTono.Foreground = Brushes.Green;
                 lblCuerda.Text = "Cuerda 2";
             }
 
-            else if (frecuenciaFundamental >= 656 && frecuenciaFundamental <= 674)
+            //termina la 2
+            //comienza la 1
+
+            else if (frecuenciaFundamental >= 313 && frecuenciaFundamental <= 323)   //esta floja
             {
-                lblTono.Text = "E5";
+                lblTono.Text = "eb";
+                imgFlechaDerecha.Visibility = Visibility.Visible;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Foreground = Brushes.Gray;
+            }
+            else if (frecuenciaFundamental >= 333 && frecuenciaFundamental <= 343) //esta tensa
+            {
+                lblTono.Text = "e#";
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Visible;
+                lblTono.Foreground = Brushes.Gray;
+
+            }
+            else if (frecuenciaFundamental >= 324 && frecuenciaFundamental <= 332) //esta al toque prro
+            {
+                imgFlechaDerecha.Visibility = Visibility.Hidden;
+                imgFlechaIzquierda.Visibility = Visibility.Hidden;
+                lblTono.Text = "e";
+                lblTono.Foreground = Brushes.Green;
                 lblCuerda.Text = "Cuerda 1";
             }
-            
-            
-            
-            
-            
-            
-            
+
             /* Aquí termina el codigo de mostrar la nota */
 
         }
